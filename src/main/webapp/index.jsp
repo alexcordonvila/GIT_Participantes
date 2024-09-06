@@ -97,6 +97,9 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 			</table>
 		</section>
 	</main>
-	<footer> PIE </footer>
+	<footer> 
+		PIE 
+		Aupa Athletic!
+	</footer>
 </body>
 </html>
