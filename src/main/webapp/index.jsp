@@ -17,15 +17,17 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cuadricula_prod.css">
+<title>Lista de participantes</title>
 </head>
 <body>
 	<header> CABECERA </header>
 	<nav>MENU</nav>
 	<main>
 		<section>
-			<form class="insertar" method="post" action="FormularioContacto"
+			<form class="insertar" method="post" action="AgregarParticipante"
 		enctype="multipart/form-data">
 
 		<H3><label>Nombre:</label></H3>
@@ -35,7 +37,7 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 		<input type="tipo" id="p_apellidos" size="tamaño" name="p_apellidos" placeholder="Apellidos" /> <br>
 			
 		<H3><label>Edad:</label></H3>
-		<input type="Date" id="p_edad" size="tamaño" name="p_edad" placeholder="33" /><br>
+		<input type="number" id="p_edad" size="tamaño" name="p_edad" placeholder="33" /><br>
 		
 		<input type="submit" value="Soy un botón submit" /> <br>
 			<a href="AgregarParticipante"><input type="button" value="" /></a>

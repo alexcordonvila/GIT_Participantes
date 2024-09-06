@@ -3,6 +3,7 @@ package com.ipartek.controlador;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -63,10 +64,12 @@ public class AgregarParticipante extends HttpServlet implements I_Conexion {
 	Connection con = db.conectar();
 	// 4 Actuar en la base de datos
 	int resultadoInsert = db.insertarParticipante(con, participanteInsertar);
-
+	List<Participante> listaParticipantes = db.obtenerParticipantes(con);
+	System.out.println("Lista Participantes:"+listaParticipantes);
 	// 5 Desconecto la base de datos
 	db.desconectar(con);
 	// 6 Seteo los atributos para el JSP
+	request.setAttribute(ATR_LISTA_PARTICIPANTES, listaParticipantes);
 	// 7 viaje
 	request.getRequestDispatcher(JSP_INDEX).forward(request, response);
     }
