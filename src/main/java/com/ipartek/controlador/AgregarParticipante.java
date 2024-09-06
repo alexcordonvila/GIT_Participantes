@@ -34,24 +34,24 @@ public class AgregarParticipante extends HttpServlet implements I_Conexion {
 
 	// 1 recepcion de parametros
 	String nombre = "";
-	if (request.getParameter("p_nombre") != null) {
-	    nombre = request.getParameter("p_nombre");
+	if (request.getParameter("nombre") != null) {
+	    nombre = request.getParameter("nombre");
 	    if (nombre.length() > 45) {
 		nombre = nombre.substring(0, 45);
 	    }
 	}
 	String apellidos = "";
-	if (request.getParameter("p_apellidos") != null) {
-	    apellidos = request.getParameter("p_apellidos");
+	if (request.getParameter("apellidos") != null) {
+	    apellidos = request.getParameter("apellidos");
 	    if (apellidos.length() > 45) {
 		apellidos = apellidos.substring(0, 45);
 	    }
 	}
 	
 	int edad = 0;
-	if(request.getParameter("p_edad")!=null) {
+	if(request.getParameter("edad")!=null) {
 		try {
-		    edad=Integer.parseInt(request.getParameter("p_edad"));
+		    edad=Integer.parseInt(request.getParameter("edad"));
 		} catch (NumberFormatException e) {
 		    edad=0;
 		}
@@ -63,6 +63,7 @@ public class AgregarParticipante extends HttpServlet implements I_Conexion {
 	com.ipartek.modelo.DB_Helper db = new DB_Helper();
 	Connection con = db.conectar();
 	// 4 Actuar en la base de datos
+	System.out.println("hola"+nombre + apellidos + edad);
 	int resultadoInsert = db.insertarParticipante(con, participanteInsertar);
 	List<Participante> listaParticipantes = db.obtenerParticipantes(con);
 	System.out.println("Lista Participantes:"+listaParticipantes);

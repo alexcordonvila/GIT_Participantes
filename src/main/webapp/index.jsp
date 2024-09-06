@@ -27,20 +27,19 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 	<nav>MENU</nav>
 	<main>
 		<section>
-			<form class="insertar" method="post" action="AgregarParticipante"
-		enctype="multipart/form-data">
+			<form class="insertar" method="post" action="AgregarParticipante">
 
 		<H3><label>Nombre:</label></H3>
-		<input type="tipo" id="p_nombre" size="tamaño" name="p_nombre" placeholder="Nombre" value="" /> <br>
+		<input type="tipo" id="nombre" size="tamaño" name="nombre" placeholder="Nombre" value="" /> <br>
 			
 		<H3><label>Apellidos:</label></H3>
-		<input type="tipo" id="p_apellidos" size="tamaño" name="p_apellidos" placeholder="Apellidos" /> <br>
+		<input type="tipo" id="apellidos" size="tamaño" name="apellidos" placeholder="Apellidos" /> <br>
 			
 		<H3><label>Edad:</label></H3>
-		<input type="number" id="p_edad" size="tamaño" name="p_edad" placeholder="33" /><br>
+		<input type="number" id="edad" size="tamaño" name="edad" placeholder="33" /><br>
 		
 		<input type="submit" value="Soy un botón submit" /> <br>
-			<a href="AgregarParticipante"><input type="button" value="" /></a>
+			<a href=""><input type="button" value="" /></a>
 		
 	</form>
 		</section>

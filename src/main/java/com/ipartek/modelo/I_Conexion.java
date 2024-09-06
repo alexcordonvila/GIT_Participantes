@@ -23,7 +23,7 @@ public interface I_Conexion {
     String PARTICIPANTE_APELLIDOS = "apellidos";
     String PARTICIPANTE_EDAD= "edad";
 
-    String SP_INSERTAR_PARTICIPANTE = "call sp_insertar_participante(?, ?, ?, ?);";
+    String SP_INSERTAR_PARTICIPANTE = "call sp_insertar_participante(?, ?, ?);";
     String SP_OBTENER_PARTICIPANTES = "call sp_obtener_participantes();";
 
     // Atributos
