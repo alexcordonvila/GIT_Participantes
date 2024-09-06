@@ -37,7 +37,7 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 				<input
 					type="tipo"
 					id="nombre"
-					size="tamaño"
+					size="tamaï¿½o"
 					name="nombre"
 					placeholder="Nombre"
 					value="" /> <br>
@@ -47,7 +47,7 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 				<input
 					type="tipo"
 					id="apellidos"
-					size="tamaño"
+					size="tamaï¿½o"
 					name="apellidos"
 					placeholder="Apellidos" /> <br>
 				<H3>
@@ -56,11 +56,11 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 				<input
 					type="number"
 					id="edad"
-					size="tamaño"
+					size="tamaï¿½o"
 					name="edad"
 					placeholder="33" /><br> <input
 					type="submit"
-					value="Soy un botón submit" /> <br> </a>
+					value="Soy un botï¿½n submit" /> <br> </a>
 			</form>
 		</section>
 		<section>
@@ -100,6 +100,8 @@ if (request.getAttribute(I_Conexion.ATR_LISTA_PARTICIPANTES) != null) {
 	<footer> 
 		PIE 
 		Aupa Athletic!
+	
+	FORï¿½A BARï¿½A
 	</footer>
 </body>
 </html>
