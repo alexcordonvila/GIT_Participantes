@@ -6,12 +6,10 @@ public interface I_Conexion {
 
     // Conexion a la BD
     String BASE_DATOS = "db_participantes";
-    String DRIVER = "com.mysql.jdbc.Driver";
-    String CONEXION = "jdbc:mysql://192.168.0.66/" + BASE_DATOS;
+    String DRIVER = "com.mysql.cj.jdbc.Driver";
+    String CONEXION = "jdbc:mysql://192.168.0.66:3306/" + BASE_DATOS;
     String USUARIO = "user";
     String PASS = "12345";
-
-   // String CONEXION = "jdbc:mysql://192.168.0.66:3306/" + BASE_DATOS;
 
     // tablas y views de la BD
 
@@ -26,7 +24,7 @@ public interface I_Conexion {
     String PARTICIPANTE_EDAD= "edad";
 
     String SP_INSERTAR_PARTICIPANTE = "call sp_insertar_participante(?, ?, ?, ?);";
-    String SP_OBTENER_PARTICIPANTES = "call sp_obtener_participantes()";
+    String SP_OBTENER_PARTICIPANTES = "call sp_obtener_participantes();";
 
     // Atributos
     String ATR_LISTA_PARTICIPANTES = "atr_lista_participantes";
